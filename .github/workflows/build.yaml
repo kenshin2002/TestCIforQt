@@ -31,16 +31,16 @@ jobs:
     - name: Configure PATH for Qt, MSVC, and Ninja
       shell: pwsh
       run: |
-        echo "${{ runner.tool_cache }}\\Qt\\5.15.2\\msvc2019_64\\bin" >> $Env:GITHUB_PATH
+        echo "C:\\Qt\\5.15.2\\msvc2019_64\\bin" >> $Env:GITHUB_PATH
         echo "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat" >> $Env:GITHUB_PATH
-        echo "C:\\Program Files\\Ninja" >> $Env:GITHUB_PATH
+        echo "C:\\Program Files\\Python312\\Lib\\site-packages\\ninja" >> $Env:GITHUB_PATH
 
     - name: Build project
       shell: pwsh
       run: |
         mkdir build
         cd build
-        cmake -G "Ninja" -DCMAKE_PREFIX_PATH="${{ runner.tool_cache }}\\Qt\\5.15.2\\msvc2019_64" ..
+        cmake -G "Ninja" -DCMAKE_PREFIX_PATH="${{ runner.tool_cache }}\\Qt\\5.15.2\\msvc2019_64"
         ninja
 
     - name: Run application
