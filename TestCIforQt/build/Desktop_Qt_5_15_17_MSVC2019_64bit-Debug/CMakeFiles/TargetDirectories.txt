@@ -1,0 +1,8 @@
+D:/TestCIforQt/TestCIforQt/build/Desktop_Qt_5_15_17_MSVC2019_64bit-Debug/CMakeFiles/TestCIforQt.dir
+D:/TestCIforQt/TestCIforQt/build/Desktop_Qt_5_15_17_MSVC2019_64bit-Debug/CMakeFiles/edit_cache.dir
+D:/TestCIforQt/TestCIforQt/build/Desktop_Qt_5_15_17_MSVC2019_64bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/TestCIforQt/TestCIforQt/build/Desktop_Qt_5_15_17_MSVC2019_64bit-Debug/CMakeFiles/list_install_components.dir
+D:/TestCIforQt/TestCIforQt/build/Desktop_Qt_5_15_17_MSVC2019_64bit-Debug/CMakeFiles/install.dir
+D:/TestCIforQt/TestCIforQt/build/Desktop_Qt_5_15_17_MSVC2019_64bit-Debug/CMakeFiles/install/local.dir
+D:/TestCIforQt/TestCIforQt/build/Desktop_Qt_5_15_17_MSVC2019_64bit-Debug/CMakeFiles/TestCIforQt_autogen_timestamp_deps.dir
+D:/TestCIforQt/TestCIforQt/build/Desktop_Qt_5_15_17_MSVC2019_64bit-Debug/CMakeFiles/TestCIforQt_autogen.dir

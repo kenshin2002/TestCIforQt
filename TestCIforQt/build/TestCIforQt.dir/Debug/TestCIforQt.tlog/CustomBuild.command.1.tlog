@@ -1,0 +1,24 @@
+^D:\TESTCIFORQT\TESTCIFORQT\BUILD\CMAKEFILES\35333BC6D9772BFCDC5CF2AC83E5DEDE\QRC_QML.CPP.RULE
+setlocal
+cd D:\TestCIforQt\TestCIforQt\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\cmake-3.29.7-windows-x86_64\cmake-3.29.7-windows-x86_64\bin\cmake.exe" -E cmake_autorcc D:/TestCIforQt/TestCIforQt/build/CMakeFiles/TestCIforQt_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TESTCIFORQT\TESTCIFORQT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\cmake-3.29.7-windows-x86_64\cmake-3.29.7-windows-x86_64\bin\cmake.exe" -SD:/TestCIforQt/TestCIforQt -BD:/TestCIforQt/TestCIforQt/build --check-stamp-file D:/TestCIforQt/TestCIforQt/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

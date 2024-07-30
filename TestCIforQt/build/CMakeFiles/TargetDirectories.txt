@@ -1,0 +1,4 @@
+D:/TestCIforQt/TestCIforQt/build/CMakeFiles/TestCIforQt.dir
+D:/TestCIforQt/TestCIforQt/build/CMakeFiles/INSTALL.dir
+D:/TestCIforQt/TestCIforQt/build/CMakeFiles/ALL_BUILD.dir
+D:/TestCIforQt/TestCIforQt/build/CMakeFiles/ZERO_CHECK.dir
