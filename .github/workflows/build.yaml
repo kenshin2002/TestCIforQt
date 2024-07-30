@@ -10,14 +10,14 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: windows-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Set up Qt
-      uses: mirkancal/install-qt-action@v2
+      uses: jurplel/install-qt-action@v2
       with:
         version: '5.15.17'
         host: 'windows'
@@ -26,14 +26,13 @@ jobs:
         dir: ${{ runner.tool_cache }}/Qt
 
     - name: Configure PATH
-      run: |
-        set PATH=${{ runner.tool_cache }}\Qt\5.15.2\msvc2019_64\bin;%PATH%
+      run: echo ::add-path::${{ runner.tool_cache }}\Qt\5.15.17\msvc2019_64\bin
 
     - name: Build project
       run: |
         mkdir build
         cd build
-        cmake -G "NMake Makefiles" -DCMAKE_PREFIX_PATH=${{ runner.tool_cache }}\Qt\5.15.17\msvc2019_64 ..
+        cmake -G "NMake Makefiles" -DCMAKE_PREFIX_PATH=${{ runner.tool_cache }}\Qt\5.15.2\msvc2019_64 ..
         nmake
 
     - name: Run application
@@ -47,4 +46,3 @@ jobs:
       with:
         name: Build-Artifacts
         path: build/
-
